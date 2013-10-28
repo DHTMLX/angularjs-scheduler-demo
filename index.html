@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="schedulerApp">
+<head>
+	<meta charset="utf-8">
+	<title>Angular Calendar demo</title>
+
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="lib/scheduler/dhtmlxscheduler.css">
+
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/scheduler/dhtmlxscheduler.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/app.scheduler.js"></script>
+</head>
+<body ng-controller="MainSchedulerCtrl">
+	<div data="events" dhx-scheduler style="height:600px; width:800px;">
+		<div class="dhx_cal_prev_button">&nbsp;</div>
+		<div class="dhx_cal_next_button">&nbsp;</div>
+		<div class="dhx_cal_today_button"></div>
+		<div class="dhx_cal_date"></div>
+		<div class="dhx_cal_tab" name="day_tab" style="right:204px;"></div>
+		<div class="dhx_cal_tab" name="week_tab" style="right:140px;"></div>
+		<div class="dhx_cal_tab" name="month_tab" style="right:76px;"></div>    
+
+		<div dhx-template="event_bar_text">
+			<strong>#{{event.id}}</strong>: {{event.text | uppercase}}
+		</div>
+	<div>
+</body>
+</html>
