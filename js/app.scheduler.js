@@ -40,7 +40,7 @@ app.directive('dhxScheduler', function() {
       $element.addClass("dhx_cal_container");
 
       //init scheduler
-      scheduler.init($element[0], $scope.scheduler.mode, $scope.scheduler.date);
+      scheduler.init($element[0], $scope.scheduler.date, $scope.scheduler.mode);
     }
   }
 });
