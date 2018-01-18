@@ -2,13 +2,12 @@
 <html lang="en" ng-app="schedulerApp">
 <head>
 	<meta charset="utf-8">
-	<title>Angular Calendar demo</title>
+	<title>AngularJS Calendar demo</title>
 
-	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="lib/scheduler/dhtmlxscheduler.css">
+	<link rel="stylesheet" href="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.css">
 
-	<script src="lib/angular/angular.min.js"></script>
-	<script src="lib/scheduler/dhtmlxscheduler.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.js"></script>
 
 	<script src="js/app.js"></script>
 	<script src="js/app.scheduler.js"></script>
@@ -19,9 +18,9 @@
 		<div class="dhx_cal_next_button">&nbsp;</div>
 		<div class="dhx_cal_today_button"></div>
 		<div class="dhx_cal_date"></div>
-		<div class="dhx_cal_tab" name="day_tab" style="right:204px;"></div>
-		<div class="dhx_cal_tab" name="week_tab" style="right:140px;"></div>
-		<div class="dhx_cal_tab" name="month_tab" style="right:76px;"></div>    
+		<div class="dhx_cal_tab" name="day_tab"></div>
+		<div class="dhx_cal_tab" name="week_tab"></div>
+		<div class="dhx_cal_tab" name="month_tab"></div>
 
 		<div dhx-template="event_bar_text">
 			<strong>#{{event.id}}</strong>: {{event.text | uppercase}}
